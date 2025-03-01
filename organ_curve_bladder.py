@@ -58,9 +58,9 @@ def process_pet_bladder(patient):
     t_file = torch.load(root_data_path + "/DynamicPET/t.pt")
     t = torch.linspace(0, t_file[-1], 2000)
 
-    label_map_path = glob.glob(f"/home/guests/valentin_langer/data/segmentationsAndResample/*DynamicFDG_{patient}/urinary_bladder.nii.gz")[0]
+    label_map_path = glob.glob(f"/xxx/xxx/xxx/data/segmentationsAndResample/*DynamicFDG_{patient}/urinary_bladder.nii.gz")[0]
     PET_list = natsorted(glob.glob(root_data_path + f"/DynamicPET/*DynamicFDG_{patient}/NIFTY/Resampled/PET_*.nii.gz"))
-    save_path = os.path.join("/home/guests/valentin_langer/data/plots/organ_curve", "image-derived", f"bladder_Vbt_{patient}")
+    save_path = os.path.join("/xxx/xxx/xxx/data/plots/organ_curve", "image-derived", f"bladder_Vbt_{patient}")
     os.makedirs(save_path, exist_ok=True)
     
     label_map_ = sitk.GetArrayFromImage(sitk.ReadImage(label_map_path))
@@ -119,9 +119,9 @@ def process_pet_bladder_normal(patient):
     t_file = torch.load(root_data_path + "/DynamicPET/t.pt")
     t = torch.linspace(0, t_file[-1], 2000)
 
-    label_map_path = glob.glob(f"/home/guests/valentin_langer/data/segmentationsAndResample/*DynamicFDG_{patient}/urinary_bladder.nii.gz")[0]
+    label_map_path = glob.glob(f"/xxx/xxx/xxx/data/segmentationsAndResample/*DynamicFDG_{patient}/urinary_bladder.nii.gz")[0]
     PET_list = natsorted(glob.glob(root_data_path + f"/DynamicPET/*DynamicFDG_{patient}/NIFTY/Resampled/PET_*.nii.gz"))
-    save_path = os.path.join("/home/guests/valentin_langer/data/plots/organ_curve", "image-derived", f"bladder_normalt_{patient}")
+    save_path = os.path.join("/xxx/xxx/xxx/data/plots/organ_curve", "image-derived", f"bladder_normalt_{patient}")
     os.makedirs(save_path, exist_ok=True)
     
     label_map_ = sitk.GetArrayFromImage(sitk.ReadImage(label_map_path))
