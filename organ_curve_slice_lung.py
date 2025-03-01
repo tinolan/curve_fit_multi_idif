@@ -62,7 +62,7 @@ def process_pet_slice(patient, slice_idx, slice_orientation="axial"):
 
     label_map_path = glob.glob(root_data_path + f"/DynamicPET/*DynamicFDG_{patient}/NIFTY/Resampled/labels.nii.gz")[0]
     PET_list = natsorted(glob.glob(root_data_path + f"/DynamicPET/*DynamicFDG_{patient}/NIFTY/Resampled/PET_*.nii.gz"))
-    save_path = os.path.join("/home/guests/valentin_langer/data/plots/organ_curve", "voxel", f"lung_Vb_{slice_orientation}_{patient}_slice_{slice_idx}")
+    save_path = os.path.join("/xxx/xxx/xxx/data/plots/organ_curve", "voxel", f"lung_Vb_{slice_orientation}_{patient}_slice_{slice_idx}")
     os.makedirs(save_path, exist_ok=True)
     
     label_map_ = sitk.GetArrayFromImage(sitk.ReadImage(label_map_path))
@@ -227,7 +227,7 @@ def process_pet_slice_normal(patient, slice_idx, slice_orientation="axial"):
 
     label_map_path = glob.glob(root_data_path + f"/DynamicPET/*DynamicFDG_{patient}/NIFTY/Resampled/labels.nii.gz")[0]
     PET_list = natsorted(glob.glob(root_data_path + f"/DynamicPET/*DynamicFDG_{patient}/NIFTY/Resampled/PET_*.nii.gz"))
-    save_path = os.path.join("/home/guests/valentin_langer/data/plots/organ_curve", "voxel", f"lung_normal_{slice_orientation}_{patient}_slice_{slice_idx}")
+    save_path = os.path.join("/xxx/xxx/xxx/data/plots/organ_curve", "voxel", f"lung_normal_{slice_orientation}_{patient}_slice_{slice_idx}")
     os.makedirs(save_path, exist_ok=True)
     
     label_map_ = sitk.GetArrayFromImage(sitk.ReadImage(label_map_path))
