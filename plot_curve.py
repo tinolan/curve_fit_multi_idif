@@ -181,7 +181,7 @@ def process_patient_organ(patient, organ, organ_path_vb, organ_path_normal, orga
             else:
                 raise ValueError(f"Organ {organ} not supported.")
         else: 
-            label_map_path = glob.glob(f"/home/guests/valentin_langer/data/segmentationsAndResample/*DynamicFDG_{patient}/urinary_bladder.nii.gz")[0]
+            label_map_path = glob.glob(f"/xxx/xxx/xxx/data/segmentationsAndResample/*DynamicFDG_{patient}/urinary_bladder.nii.gz")[0]
             label_map = sitk.GetArrayFromImage(sitk.ReadImage(label_map_path))
             organ_mask = (label_map[:, :, :] == 1) 
 
@@ -417,7 +417,7 @@ def process_patient_organ(patient, organ, organ_path_vb, organ_path_normal, orga
 
 
 def process_all_patients():
-    base_path = "/home/guests/valentin_langer/data/plots/organ_curve/image-derived"
+    base_path = "/xxx/xxx/xxx/data/plots/organ_curve/image-derived"
     #organs = ["liver", "lung", "kidney", "bladder"]
     organs = ["lung"]
     
