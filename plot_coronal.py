@@ -6,12 +6,12 @@ import matplotlib.image as mpimg
 
 
 # Datei-Pfade
-file_path_1 = "/home/guests/valentin_langer/data/plots/organ_curve/voxel/all_new_coronal_06_slice_161/06_slice_161_params.npz"
-file_path_2 = "/home/guests/valentin_langer/data/plots/organ_curve/voxel/normal_coronal_06_slice_161/06_slice_161_params.npz"
+file_path_1 = "/xxx/xxx/xxx/data/plots/organ_curve/voxel/all_new_coronal_06_slice_161/06_slice_161_params.npz"
+file_path_2 = "/xxx/xxx/xxx/data/plots/organ_curve/voxel/normal_coronal_06_slice_161/06_slice_161_params.npz"
 
-pet_file_path = "/home/polyaxon-data/data1/DynamicPET/04_DynamicFDG_06/NIFTY/Resampled/PET_61.nii.gz"
-ct_file_path = "/home/polyaxon-data/data1/DynamicPET/04_DynamicFDG_06/NIFTY/Resampled/CT.nii.gz"  
-mip_image_path = "/home/guests/valentin_langer/data/plots/organ_curve/voxel/all_new_coronal_06_slice_161/patientPET06_sum_mip.png"
+pet_file_path = "/xxx/xxx-data/xxx/DynamicPET/04_DynamicFDG_06/NIFTY/Resampled/PET_61.nii.gz"
+ct_file_path = "/xxx/xxx-data/xxx/DynamicPET/04_DynamicFDG_06/NIFTY/Resampled/CT.nii.gz"  
+mip_image_path = "/xxx/xxx/xxx/data/plots/organ_curve/voxel/all_new_coronal_06_slice_161/patientPET06_sum_mip.png"
 
 # Lade PET-Bild
 pet_img = nib.load(pet_file_path).get_fdata()
