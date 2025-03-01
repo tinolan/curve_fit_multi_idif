@@ -4,10 +4,10 @@ import os
 import nibabel as nib
 
 # Datei-Pfade
-vb_file_path = "/home/guests/valentin_langer/data/plots/organ_curve/voxel/kidney_Vb_axial_06_slice_205/06_slice_205_params.npz"
-normal_file_path = "/home/guests/valentin_langer/data/plots/organ_curve/voxel/kidney_normal_axial_06_slice_205/06_slice_205_params.npz"
-pet_file_path = "/home/polyaxon-data/data1/DynamicPET/04_DynamicFDG_06/NIFTY/Resampled/PET_61.nii.gz"
-ct_file_path = "/home/polyaxon-data/data1/DynamicPET/04_DynamicFDG_06/NIFTY/Resampled/CT.nii.gz"  
+vb_file_path = "/xxx/xxx/xxx/data/plots/organ_curve/voxel/kidney_Vb_axial_06_slice_205/06_slice_205_params.npz"
+normal_file_path = "/home/xxx/xxx/data/plots/organ_curve/voxel/kidney_normal_axial_06_slice_205/06_slice_205_params.npz"
+pet_file_path = "/xxx/xxx-data/xxx/DynamicPET/04_DynamicFDG_06/NIFTY/Resampled/PET_61.nii.gz"
+ct_file_path = "/xxx/xxx-data/xxx/DynamicPET/04_DynamicFDG_06/NIFTY/Resampled/CT.nii.gz"  
 
 slice = 205
 
